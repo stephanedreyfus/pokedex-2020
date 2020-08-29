@@ -1,3 +1,4 @@
+import React from 'react';
 import Pokecard from './Pokecard';
 import './Pokedex.css';
 
@@ -16,14 +17,15 @@ const Pokedex = ({ pokearray=DEFAULT }) => (
   <>
     <h1>Your Pokédex</h1>
     <ul className="pokedex-list">
-      {pokearray.map((p) => {
+      {pokearray.map((p) => (
         <Pokecard
           key={p.id}
+          id={p.id}
           name={p.name}
           type={p.type}
           exp={p.base_experience}
         />
-      })}
+      ))}
     </ul>
   </>
 );

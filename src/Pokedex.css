@@ -1,3 +1,7 @@
 .pokedex-list {
   list-style: none;
 }
+
+h1 {
+  width: 100%;
+}
