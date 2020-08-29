@@ -3,8 +3,10 @@
   border: solid 1px lightsteelblue;
   border-radius: 20px;
   text-align: center;
+  padding: 2em;
+  width: 25%;
 }
 
 .pokecard-img {
-  width: 1.5em;
+  width: 30%;
 }
