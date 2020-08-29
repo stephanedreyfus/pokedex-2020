@@ -1,0 +1,10 @@
+.pokecard {
+  background: lightgray;
+  border: solid 1px lightsteelblue;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.pokecard-img {
+  width: 1.5em;
+}

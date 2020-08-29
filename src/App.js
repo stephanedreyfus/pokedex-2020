@@ -3,7 +3,9 @@ import '.App.css';
 import Pokedex from './Pokedex';
 
 const App = () => (
-  <Pokedex />
+  <section className="app">
+    <Pokedex />
+  </section>
 );
 
 export default App;
