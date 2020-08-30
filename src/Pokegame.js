@@ -1,6 +1,6 @@
 import React from 'react'
 import './Pokegame.css'
-import { randId, getPokemon } from '../Helpers/Helpers';
+import { randId, getPokemon } from './pokeFunctions.js';
 import Pokedex from './Pokedex';
 
 // Someday this will be determined by the players.

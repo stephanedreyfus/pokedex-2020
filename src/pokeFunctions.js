@@ -1,5 +1,5 @@
 // Helper functions for getting a set of random pokemon
-import axios from axios;
+import axios from 'axios';
 
 const BASE_API = "https://pokeapi.co/api/v2/pokemon/";
 
