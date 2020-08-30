@@ -2,8 +2,6 @@ import React from 'react';
 import Pokecard from './Pokecard';
 import './Pokedex.css';
 
-const BASE_API = "https://pokeapi.co/api/v2/pokemon/";
-
 const DEFAULT = [
   {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
   {id: 7, name: 'Squirtle', type: 'water', base_experience: 63},
@@ -14,18 +12,6 @@ const DEFAULT = [
   {id: 94, name: 'Gengar', type: 'poison', base_experience: 225},
   {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
 ]
-
-const getPokemon = async () => {
-  let randId = Math.floor(Math.random() * 850);
-  try {
-    let res = await axios.get(BASE_API + randId + "/");
-    return res;
-  }
-  catch (e) {
-    return ({msg: `No pokemon at ${randId}`, error: e});
-  }
-
-};
 
 const Pokedex = ({ pokearray=DEFAULT }) => (
   <>
@@ -41,7 +27,6 @@ const Pokedex = ({ pokearray=DEFAULT }) => (
         />
       ))}
     </ul>
-      <div>{getPokemon()}</div>
   </>
 );
 
