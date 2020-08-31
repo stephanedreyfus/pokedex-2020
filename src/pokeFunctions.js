@@ -36,7 +36,7 @@ const getPokemon = async (set) => {
       let pokemon = {
         id: res.data.id,
         name: res.data.name,
-        type: res.data.types[0].type,
+        type: res.data.types[0].type.name,
         base_experience: res.data.base_experience,
       }
       pokeArray.push(pokemon);
@@ -45,7 +45,8 @@ const getPokemon = async (set) => {
       console.log({msg: `No pokemon at ${id}`, error: e});
     }
   }
-
+  console.log(pokeArray);
+  console.log(Array.isArray(pokeArray));
   return pokeArray;
 };
 
