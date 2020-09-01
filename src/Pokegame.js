@@ -14,13 +14,6 @@ const Pokegame = () => {
   const [pokemon, setPokemon] = useState(null);
 
   useEffect(() => {
-    // Trying with .then. Uh oh. This causes an infinite loop. Why?
-    // getPokemon(randId(NUM_POKEMON)).then((res) => {
-    //   setPokemon(res);
-    // });
-
-    // Async necessitates inner function wrapper.
-    // Also produces infinite loop.
     const handleGetPokemon = async () => {
       let res = await getPokemon(randId(NUM_POKEMON));
       setPokemon(res);
@@ -29,11 +22,7 @@ const Pokegame = () => {
     
     handleGetPokemon();
 
-  }, [pokemon]);
-
-  // useEffect(() => {
-  //   if (pokemon) setLoading(false)
-  // }, [pokemon]);
+  }, []);
   
   return loading === true ? loadMsg : <Pokedex pokearray={pokemon}/>;
 };
