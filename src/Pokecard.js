@@ -9,7 +9,7 @@ const Pokecard = ({ id, name, type, exp }) => (
     <p className="pokecard-name">{name}</p>
     <img
       className="pokecard-img"
-      src={IMAGE_API + id + ".png"}
+      src={IMAGE_API + id + ".png" || "https://tinyurl.com/apokeball"}
       alt={name}
     />
     <p className="pokecard-type">Type: {type}</p>
