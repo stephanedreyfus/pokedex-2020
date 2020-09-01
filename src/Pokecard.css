@@ -6,6 +6,7 @@
   margin: 1em;
   width: 20%;
   flex-direction: column;
+  box-shadow: -3px 4px 5px 2px lightskyblue;
 }
 
 .pokecard * {
