@@ -24,11 +24,11 @@ const Pokegame = () => {
     const handleGetPokemon = async () => {
       let res = await getPokemon(randId(NUM_POKEMON));
       setPokemon(res);
+      if (res) setLoading(false);
     };
     
     handleGetPokemon();
 
-    if (pokemon) setLoading(false);
   }, [pokemon]);
 
   // useEffect(() => {
