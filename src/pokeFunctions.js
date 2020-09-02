@@ -46,8 +46,6 @@ const getPokemon = async (set) => {
       console.log({msg: `No pokemon at ${id}`, error: e});
     }
   }
-  console.log(pokeArray);
-  console.log(Array.isArray(pokeArray));
   return pokeArray;
 };
 

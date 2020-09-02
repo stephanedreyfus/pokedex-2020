@@ -13,10 +13,10 @@ const DEFAULT = [
   {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
 ]
 
-const Pokedex = ({ pokearray=DEFAULT }) => (
+const Pokedex = ({ pokearray=DEFAULT, color }) => (
   <>
     <h1 className="pokedex-header">Your Pokédex</h1>
-    <ul className="pokedex-list">
+    <ul className="pokedex-list" style={{background: color}}>
       {pokearray.map((p) => (
         <Pokecard
           key={p.id}
