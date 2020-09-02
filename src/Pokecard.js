@@ -1,15 +1,12 @@
 import React from 'react';
 import './Pokecard.css';
 
-const IMAGE_API = "https://raw.githubusercontent.com/PokeAPI/" +
-                  "sprites/master/sprites/pokemon/"
-
-const Pokecard = ({ id, name, type, exp }) => (
+const Pokecard = ({ name, img, type, exp }) => (
   <div className="pokecard">
     <p className="pokecard-name">{name}</p>
     <img
       className="pokecard-img"
-      src={IMAGE_API + id + ".png" || "https://tinyurl.com/apokeball"}
+      src={img || "https://tinyurl.com/apokeball"}
       alt={name}
     />
     <p className="pokecard-type">Type: {type}</p>
@@ -19,4 +16,6 @@ const Pokecard = ({ id, name, type, exp }) => (
 
 export default Pokecard;
 
+// *** Eventually set image default to "https://tinyurl.com/apokeball", but need to look into
+// how to check if a url returns a 404 for the conditional.
 // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png

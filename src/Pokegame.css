@@ -1,5 +1,6 @@
 .pokegame-loadmsg {
   margin: auto;
   color: gray;
-  justify-content: center;
+  width: 100%;
+  text-align: center;
 }

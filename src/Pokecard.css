@@ -1,16 +1,19 @@
+.pokecard * {
+  background: lightgray;
+  margin: auto;
+}
+
 .pokecard {
   background: lightgray;
   border: solid 1px lightsteelblue;
   border-radius: 7px;
   text-align: center;
-  margin: 1em;
-  width: 20%;
+  margin: 2em 8em;
+  width: 8%;
   flex-direction: column;
   box-shadow: -3px 4px 5px 2px lightskyblue;
 }
 
-.pokecard * {
-  background: lightgray;
-  width: 30%;
-  margin: auto;
-}
+/* .pokecard-img {
+  height: 60px;
+} */

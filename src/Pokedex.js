@@ -15,13 +15,13 @@ const DEFAULT = [
 
 const Pokedex = ({ pokearray=DEFAULT }) => (
   <>
-    <h1>Your Pokédex</h1>
+    <h1 className="pokedex-header">Your Pokédex</h1>
     <ul className="pokedex-list">
       {pokearray.map((p) => (
         <Pokecard
           key={p.id}
-          id={p.id}
           name={p.name}
+          img={p.img}
           type={p.type}
           exp={p.base_experience}
         />

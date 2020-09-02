@@ -36,6 +36,7 @@ const getPokemon = async (set) => {
       let pokemon = {
         id: res.data.id,
         name: res.data.name,
+        img: res.data.sprites.front_default,
         type: res.data.types[0].type.name,
         base_experience: res.data.base_experience,
       }

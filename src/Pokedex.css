@@ -4,7 +4,7 @@
   flex-wrap: wrap;
 }
 
-h1 {
+.pokedex-header {
   width: 100%;
-  margin: auto;
+  text-align: center;
 }
