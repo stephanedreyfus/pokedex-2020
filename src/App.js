@@ -11,7 +11,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const [pokemon, setPokemon] = useState(null);
 
-  const loadMsg = <h3 className="pokegame-loadmsg">Fetching Pokémon!</h3>;
+  const loadMsg = <h3 className="app-loadmsg">Fetching Pokémon!</h3>;
   const pokedex = <section className="app"><Pokegame pokemon={pokemon} num={NUM_POKEMON}/></section>
 
   useEffect(() => {
