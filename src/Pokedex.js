@@ -13,7 +13,7 @@ const DEFAULT = [
   {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
 ]
 
-const Pokedex = ({ pokearray=DEFAULT, bgcolor, player, totalExp }) => {
+const Pokedex = ({ pokearray=DEFAULT, bgcolor, player, totalExp, win }) => {
 
   const playerStyle = {
     background: `linear-gradient(to bottom right, lightgray, ${bgcolor})`
@@ -34,6 +34,7 @@ const Pokedex = ({ pokearray=DEFAULT, bgcolor, player, totalExp }) => {
         ))}
       </ul>
         <h2>This hand is worth {totalExp} points.</h2>
+        <h2>{win ? "This hand wins!" : "🙁 🙁 🙁"}</h2>
     </div>
   );
 };
