@@ -13,21 +13,28 @@ const DEFAULT = [
   {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
 ]
 
-const Pokedex = ({ pokearray=DEFAULT }) => (
-  <div className="pokedex">
-    <h1 className="pokedex-header">Your Pokédex</h1>
-    <ul className="pokedex-list">
-      {pokearray.map((p) => (
-        <Pokecard
-          key={p.id}
-          name={p.name}
-          img={p.img}
-          type={p.type}
-          exp={p.base_experience}
-        />
-      ))}
-    </ul>
-  </div>
-);
+const Pokedex = ({ pokearray=DEFAULT, bgcolor, player }) => {
+
+  const playerStyle = {
+    background: `linear-gradient(to bottom right, gray, ${bgcolor})`
+  };
+
+  return (
+    <div className="pokedex" style={playerStyle}>
+      <h1 className="pokedex-header">{player}'s Pokédex</h1>
+      <ul className="pokedex-list">
+        {pokearray.map((p) => (
+          <Pokecard
+            key={p.id}
+            name={p.name}
+            img={p.img}
+            type={p.type}
+            exp={p.base_experience}
+          />
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 export default Pokedex;

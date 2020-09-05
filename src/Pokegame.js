@@ -6,8 +6,8 @@ const Pokegame = ({ pokemon, num }) => {
   
   return (
     <>
-      <Pokedex pokearray={pokemon.splice(num / 2)} bgcolor={"red"}/>
-      <Pokedex pokearray={pokemon} bgcolor={"blue"}/>
+      <Pokedex player={"Player One"} pokearray={pokemon.splice(num / 2)} bgcolor={"red"}/>
+      <Pokedex player={"Player Two"} pokearray={pokemon} bgcolor={"blue"}/>
     </>
   );
 };
