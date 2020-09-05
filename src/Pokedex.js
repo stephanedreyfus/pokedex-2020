@@ -13,10 +13,10 @@ const DEFAULT = [
   {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
 ]
 
-const Pokedex = ({ pokearray=DEFAULT, bgcolor, player }) => {
+const Pokedex = ({ pokearray=DEFAULT, bgcolor, player, totalExp }) => {
 
   const playerStyle = {
-    background: `linear-gradient(to bottom right, gray, ${bgcolor})`
+    background: `linear-gradient(to bottom right, lightgray, ${bgcolor})`
   };
 
   return (
@@ -33,6 +33,7 @@ const Pokedex = ({ pokearray=DEFAULT, bgcolor, player }) => {
           />
         ))}
       </ul>
+        <h2>This hand is worth {totalExp} points.</h2>
     </div>
   );
 };
