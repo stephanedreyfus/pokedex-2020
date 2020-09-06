@@ -4,6 +4,7 @@
 }
 
 .pokecard {
+  position: relative;
   background: lightgray;
   border: solid 1px lightsteelblue;
   border-radius: 7px;
@@ -12,8 +13,19 @@
   width: 8%;
   flex-direction: column;
   box-shadow: -3px 4px 5px 2px lightskyblue;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
 }
 
-/* .pokecard-img {
-  height: 60px;
-} */
+.pokecard:hover {
+  box-shadow: -6px 7px 5px 2px lightskyblue;
+  top: -3px;
+  right: -3px;
+}
+
+.pokecard:active {
+  box-shadow: -1px 1px 5px 3px lightskyblue;
+  top: 1px;
+  right: 1px;
+}

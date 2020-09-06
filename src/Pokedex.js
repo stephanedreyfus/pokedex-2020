@@ -33,8 +33,8 @@ const Pokedex = ({ pokearray=DEFAULT, bgcolor, player, totalExp, win }) => {
           />
         ))}
       </ul>
-        <h2>This hand is worth {totalExp} points.</h2>
-        <h2>{win ? "This hand wins!" : "🙁 🙁 🙁"}</h2>
+        <h2 className="pokedex-exp">This hand is worth {totalExp} points.</h2>
+        <h2 className="pokedex-win">{win ? "This hand wins!" : "🙁 🙁 🙁"}</h2>
     </div>
   );
 };
