@@ -8,19 +8,6 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  left: -2000px;
-  -webkit-animation: slide 0.5s forwards;
-  /* -webkit-animation-delay: 2s; */
-  animation: slide 0.5s forwards;
-  animation-delay: 2s;
-}
-
-@-webkit-keyframes pokedex-list {
-  100% { left: 0; }
-}
-
-@keyframes pokedex-list {
-  100% { left: 0; }
 }
 
 .pokedex-header, .pokedex-exp,  .pokedex-win {

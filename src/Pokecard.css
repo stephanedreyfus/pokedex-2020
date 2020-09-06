@@ -6,6 +6,7 @@
 .pokecard {
   position: relative;
   background: lightgray;
+  /* background: linear-gradient(to bottom right, silver, gray); */
   border: solid 1px lightsteelblue;
   border-radius: 7px;
   text-align: center;
