@@ -8,10 +8,8 @@ import Pokedex from './Pokedex';
  * @returns {Integer}
  */
 const calcTotalExp = (pokearray) => {
-  console.log("In calcTotalExperience with array", pokearray);
   let totalExp = 0;
   for (let mon of pokearray) {
-    console.log("Curren mon value:", mon.base_experience);
     totalExp += mon.base_experience;
   }
   return totalExp;
