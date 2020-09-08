@@ -1,3 +1,22 @@
+# A Pokedex with a Pokegame
+### Some fun with React Hooks and Simple CSS animation
+***
+
+Starting with a simple project that combined some API work with updated React work (trying to use maily functional components), I started adding more functionality and more css. As things stand once the "hands" of pokemon are determined, the hand with the highest exp total wins. I would eventually like this be a playable game where players can actually take actions that may help them win. For the time being the winning hand is determined almost as soon as the API is finished and on it's way to being rendered.
+
+This app features React as it was around August 2020, and some practice CSS animations.
+
+### Plans For the Future
+- [ ] Add gameplay: each player can reroll one pokemon to try and get a higher exp pokemon.
+- [ ] Skip button for rerolls.
+- [ ] Update fonts.
+- [ ] Animate text.
+- [ ] Add game explanation modal.
+- [ ] Make it possible for the players to choose how many pokemon per hand.
+- [ ] Players can choose number of rerolls.
+
+***
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
