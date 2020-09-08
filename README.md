@@ -14,6 +14,7 @@ This app features React as it was around August 2020, and some practice CSS anim
 - [ ] Add game explanation modal.
 - [ ] Make it possible for the players to choose how many pokemon per hand.
 - [ ] Players can choose number of rerolls.
+- [ ] Add tests!
 
 ***
 
