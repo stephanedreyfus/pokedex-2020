@@ -19,8 +19,10 @@ const Pokedex = ({ pokearray=DEFAULT, bgcolor, player, totalExp, win }) => {
     background: `linear-gradient(to bottom right, lightgray, ${bgcolor})`
   };
 
+  const winClass = `pokedex ${win ? "win" : "lose"}`;
+
   return (
-    <div className="pokedex" style={playerStyle}>
+    <div className={winClass} style={playerStyle}>
       <h1 className="pokedex-header">{player}'s Pokédex</h1>
       <ul className="pokedex-list">
         {pokearray.map((p) => (
