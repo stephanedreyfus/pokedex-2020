@@ -24,7 +24,7 @@ const App = () => {
     handleGetPokemon();
 
   }, []);
-  
+  debugger;
   return loading === true ? loadMsg : pokedex;
 };
 
